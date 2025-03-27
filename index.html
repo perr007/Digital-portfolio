@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Portfolio</title>
+    <style>
+        /* Light Modern Theme */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-y: auto;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            margin-bottom: 10px;
+        }
+
+        .resume-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #007bff;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .resume-button:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #0056b3;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .section-content {
+            background-color: #ffffff;
+            padding: 3rem;
+            margin: 2rem auto;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .skills-container {
+            text-align: left;
+            display: inline-block;
+        }
+
+        .skills-container ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .skills-container li {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px 0;
+        }
+
+        .project {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .project:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="dinesh.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>perarasu </h1>
+            <p>IT Engineer</p>
+            <a href="resume.pdf" target="_blank" class="resume-button">Download Resume</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About </a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section-content">
+        <h2>About Me</h2>
+        <p class="about-text">
+            I'm a passionate IT Engineer, DBMS Developer, and UI/UX Designer with a strong foundation in 
+            computer science and advanced technologies.I'm actively working on internships and projects to
+            enhance my skills. As a fresher, I am eager to apply my knowledge of database management systems,
+            software development, and user-centric design to real-world challenges My goal is to build efficient,
+            scalable, and user-friendly solutions while continuously learning and growing in the tech industry.
+
+        </p>
+    </section>
+
+    <section id="education" class="section-content">
+        <h2>Education</h2>
+        <p>Annai Vailankanni Arts And Science College - IT</p>
+    </section>
+
+    <section id="skills" class="section-content">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <ul>
+                <li>ASP.NET</li>
+                <li>DBMS</li>
+                <li>Cloud Computing</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section-content">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <a href="#" class="project">Calculator</a>
+            <a href="#" class="project">Digital Portfolio</a>
+            <a href="#" class="project">Login Form</a>
+            <a href="#" class="project">Quiz Game</a>
+        </div>
+    </section>
+
+    <section id="resume" class="section-content">
+        <h2>Resume</h2>
+        <a href="resume.pdf" target="_blank" class="resume-button">Download Resume</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 perarasu </p>
+    </footer>
+</body>
+</html>
